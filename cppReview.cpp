@@ -14,18 +14,22 @@ int main(void) {
   cout << "====== This is my C++ Review code. ======" << endl;
 
   do {
+    cout << "=================================================" << endl;
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
     cout << "1. cout & cin" << endl;
-    cout << "2. pass by reference vs value" << endl;
+    cout << "2. Pass by Reference vs Value" << endl;
+    cout << "3. Loops" << endl;
     cout << "0. Quit Program" << endl;
     cout << "" << endl;
     cout << "Choice Number: ";
     cin >> choice;
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "=================================================" << endl;
 
     switch (choice) {
     case 1: // cout & cin
-      cout << "Choice 1:" << endl;
+      cout << "cout & cin:" << endl;
+      cout << "----------" << endl;
       cout << "This is cout printing out text." << endl; // endl inserts a new line below
       cout << "Enter a number 1 though 10: ";
       cin >> num1;
@@ -34,11 +38,11 @@ int main(void) {
       } else {
         cout << num1 << " is not within 1 and 10 but cin takes in users input" << endl;
       }
-      cout << "" << endl;
       break;
 
     case 2: // pass by reference vs value
       cout << "Pass by Reference:" << endl;
+      cout << "-----------------" << endl;
       cout << "void swapnum(int &i, int &j) {" << endl;
       cout << "  int temp = i;" << endl;
       cout << "  i = j;" << endl;
@@ -53,8 +57,9 @@ int main(void) {
       cout << "  return 0;" << endl;
       cout << "}" << endl;
       cout << "A is 20 and B is 10" << endl;
-      cout << "************************************************" << endl;
+      cout << "***************************************" << endl;
       cout << "Pass by Value:" << endl;
+      cout << "-------------" << endl;
       cout << "void func (int a, int b){" << endl;
       cout << "  a += b;" << endl;
       cout << "  printf(""In func, a = %/d    b = %/d"", a, b);" << endl;
@@ -69,9 +74,40 @@ int main(void) {
       cout << "In main, x = 5  y = 7" << endl;
       break; 
 
+    case 3: // Loops
+      cout << "Loops:" << endl;
+      cout << "***************************************" << endl;
+      cout << "For Loops:" << endl;
+      cout << "---------" << endl;
+      cout << "for(int i = 0; i < 0; i++)" << endl;
+      cout << "{recurring statements}" << endl;
+      cout << "***************************************" << endl;
+      cout << "While Loops:" << endl;
+      cout << "-----------" << endl;
+      cout << "I = 0;" << endl;
+      cout << "while(I < 10){" << endl;
+      cout << "cout << I" << endl;
+      cout << "I++;" << endl;
+      cout << "}" << endl;
+      cout << "or ---" << endl;
+      cout << "ans = 'Y'" << endl;
+      cout << "while(ans != 'N'){" << endl;
+      cout << "//call some functions" << endl;
+      cout << "cout << \"continue?\";" << endl;
+      cout << "cin << ans;" << endl;
+      cout << "}" << endl;
+      cout << "***************************************" << endl;
+      cout << "Do-While Loops:" << endl;
+      cout << "--------------" << endl;
+      cout << "int counter = 0;" << endl;
+      cout << "do {" << endl;
+      cout << "  cout << \"Counter value: \" << counter << endl;" << endl;
+      cout << "  counter++; // Increment the counter" << endl;
+      cout << "} while (counter < 5); // Continue looping while counter is less than 5" << endl;
+      break;
+
     case 0: // quit case
       cout << "Thanks for Reviewing!" << endl;
-      cout << "" << endl;
       break;
 
     default:
