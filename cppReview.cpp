@@ -19,6 +19,20 @@ int main(void) {
     cout << "1. cout & cin" << endl;
     cout << "2. Pass by Reference vs Value" << endl;
     cout << "3. Loops" << endl;
+    //4. Arrays
+    //5. Functions
+    //--
+    //6. Characters
+    //7. Strings
+    //8. getline & cin
+    //--
+    //9. Strucs
+    //--
+    //10. Matrix
+    //11. Using Data Files
+    //--
+    //12. Classes
+    //13. Objects
     cout << "0. Quit Program" << endl;
     cout << "" << endl;
     cout << "Choice Number: ";
