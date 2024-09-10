@@ -16,6 +16,7 @@ int main(void) {
   do {
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
     cout << "1. cout & cin" << endl;
+    cout << "2. pass by reference vs value" << endl;
     cout << "0. Quit Program" << endl;
     cout << "" << endl;
     cout << "Choice Number: ";
@@ -36,6 +37,38 @@ int main(void) {
       cout << "" << endl;
       break;
 
+    case 2: // pass by reference vs value
+      cout << "Pass by Reference:" << endl;
+      cout << "void swapnum(int &i, int &j) {" << endl;
+      cout << "  int temp = i;" << endl;
+      cout << "  i = j;" << endl;
+      cout << "  j = temp;" << endl;
+      cout << "}" << endl;
+      cout << "" << endl;
+      cout << "int main(void) {" << endl;
+      cout << "  int a = 10;" << endl;
+      cout << "  int b = 20;" << endl;
+      cout << "  swapnum(a, b);" << endl;
+      cout << "  printf(""A is &d and B is &d, a, b"");" << endl;
+      cout << "  return 0;" << endl;
+      cout << "}" << endl;
+      cout << "A is 20 and B is 10" << endl;
+      cout << "************************************************" << endl;
+      cout << "Pass by Value:" << endl;
+      cout << "void func (int a, int b){" << endl;
+      cout << "  a += b;" << endl;
+      cout << "  printf(""In func, a = %/d    b = %/d"", a, b);" << endl;
+      cout << "}" << endl;
+      cout << "int main(void){" << endl;
+      cout << "  int x = 5, y = 7;" << endl;
+      cout << "  func(x, y);" << endl;
+      cout << "  printf(""In main, x = %/d    y = %/d"", x, y);" << endl;
+      cout << "  return 0;" << endl;
+      cout << "}" << endl;
+      cout << "In func, a = 12 b = 7" << endl;
+      cout << "In main, x = 5  y = 7" << endl;
+      break; 
+
     case 0: // quit case
       cout << "Thanks for Reviewing!" << endl;
       cout << "" << endl;
@@ -44,7 +77,6 @@ int main(void) {
     default:
       cout << "Not a valid choice." << endl;
       cout << "Please select one of the following numerical options." << endl;
-      cout << "" << endl;
       break;
     }
   }
