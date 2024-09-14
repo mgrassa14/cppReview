@@ -19,7 +19,7 @@ int main(void) {
     cout << "1. cout & cin" << endl;
     cout << "2. Pass by Reference vs Value" << endl;
     cout << "3. Loops" << endl;
-    //4. Arrays
+    cout << "4. Arrays" << endl;
     //5. Functions
     //--
     //6. Characters
@@ -120,6 +120,20 @@ int main(void) {
       cout << "} while (counter < 5); // Continue looping while counter is less than 5" << endl;
       break;
 
+    case 4: // array
+      cout << "Array:" << endl;
+      cout << "--------------" << endl;
+      cout << "declare: <type><name>[num of slots]" << endl;
+      cout << "    int scores[10]" << endl;
+      cout << "for loop:" << endl;
+      cout << "// user intputs for each slot of array" << endl;
+      cout << "for(int i = 0; i < 10; i++){" << endl;
+      cout << "  cin >> scores[i]; }" << endl;
+      cout << "// outputs all slots in array" << endl;
+      cout << "for(int j = 0; j < 10; j++){" << endl;
+      cout << "  cout << scores[j]; }" << endl;
+      break;
+    
     case 0: // quit case
       cout << "Thanks for Reviewing!" << endl;
       break;
