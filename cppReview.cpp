@@ -17,10 +17,10 @@ int main(void) {
     cout << "=================================================" << endl;
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
     cout << "1. cout & cin" << endl;
-    cout << "2. Pass by Reference vs Value" << endl;
-    cout << "3. Loops" << endl;
-    cout << "4. Arrays" << endl;
-    //5. Functions
+    cout << "2. Functions" << endl;
+    cout << "3. Pass by Reference vs Value" << endl;
+    cout << "4. Loops" << endl;
+    cout << "5. Arrays" << endl;
     //--
     //6. Characters
     //7. Strings
@@ -53,10 +53,16 @@ int main(void) {
         cout << num1 << " is not within 1 and 10 but cin takes in users input" << endl;
       }
       break;
-
-    case 2: // pass by reference vs value
+    
+    case 2: // function case
+      cout << "Functions:" << endl;
+      break;
+    
+    case 3: // pass by reference vs value
       cout << "Pass by Reference:" << endl;
       cout << "-----------------" << endl;
+      cout << "//consider it as an address that would permenatly change the" << endl;
+      cout << "//value of a variable" << endl;
       cout << "void swapnum(int &i, int &j) {" << endl;
       cout << "  int temp = i;" << endl;
       cout << "  i = j;" << endl;
@@ -74,6 +80,7 @@ int main(void) {
       cout << "***************************************" << endl;
       cout << "Pass by Value:" << endl;
       cout << "-------------" << endl;
+      cout << "//does not permentatly change the value of a variable" << endl;
       cout << "void func (int a, int b){" << endl;
       cout << "  a += b;" << endl;
       cout << "  printf(""In func, a = %/d    b = %/d"", a, b);" << endl;
@@ -88,7 +95,7 @@ int main(void) {
       cout << "In main, x = 5  y = 7" << endl;
       break; 
 
-    case 3: // Loops
+    case 4: // Loops
       cout << "Loops:" << endl;
       cout << "***************************************" << endl;
       cout << "For Loops:" << endl;
@@ -120,9 +127,9 @@ int main(void) {
       cout << "} while (counter < 5); // Continue looping while counter is less than 5" << endl;
       break;
 
-    case 4: // array
+    case 5: // array
       cout << "Array:" << endl;
-      cout << "--------------" << endl;
+      cout << "-----" << endl;
       cout << "declare: <type> <name>[num of slots]" << endl;
       cout << "    int scores[3] = {1, 2, 3}" << endl;
       cout << "for loop:" << endl;
