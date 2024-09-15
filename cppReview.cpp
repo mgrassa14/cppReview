@@ -17,10 +17,13 @@ int main(void) {
     cout << "=================================================" << endl;
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
     cout << "1. cout & cin" << endl;
-    cout << "2. Functions" << endl;
-    cout << "3. Pass by Reference vs Value" << endl;
+    cout << "" << endl;
+    cout << "2. Switch statements" << endl;
+    cout << "3. Debugging tips" << endl;
     cout << "4. Loops" << endl;
     cout << "5. Arrays" << endl;
+    cout << "6. Functions" << endl;
+    cout << "7. Pass by Reference vs Value" << endl;
     //--
     //6. Characters
     //7. Strings
@@ -54,11 +57,68 @@ int main(void) {
       }
       break;
     
-    case 2: // function case
+    case 2: // switch statements case
+      cout << "Switch statements:" << endl;
+      break;
+      
+    case 3: // debugging tips case
+      cout << "Debugging Tips:" << endl;
+      break;
+    
+    case 4: // Loops
+      cout << "Loops:" << endl;
+      cout << "***************************************" << endl;
+      cout << "For Loops:" << endl;
+      cout << "---------" << endl;
+      cout << "for(int i = 0; i < 0; i++)" << endl;
+      cout << "{recurring statements}" << endl;
+      cout << "***************************************" << endl;
+      cout << "While Loops:" << endl;
+      cout << "-----------" << endl;
+      cout << "I = 0;" << endl;
+      cout << "while(I < 10){" << endl;
+      cout << "cout << I" << endl;
+      cout << "I++;" << endl;
+      cout << "}" << endl;
+      cout << "or ---" << endl;
+      cout << "ans = 'Y'" << endl;
+      cout << "while(ans != 'N'){" << endl;
+      cout << "//call some functions" << endl;
+      cout << "cout << \"continue?\";" << endl;
+      cout << "cin << ans;" << endl;
+      cout << "}" << endl;
+      cout << "***************************************" << endl;
+      cout << "Do-While Loops:" << endl;
+      cout << "--------------" << endl;
+      cout << "int counter = 0;" << endl;
+      cout << "do {" << endl;
+      cout << "  cout << \"Counter value: \" << counter << endl;" << endl;
+      cout << "  counter++; // Increment the counter" << endl;
+      cout << "} while (counter < 5); // Continue looping while counter is less than 5" << endl;
+      break;
+    
+    case 5: // array
+      cout << "Array:" << endl;
+      cout << "-----" << endl;
+      cout << "declare: <type> <name>[num of slots]" << endl;
+      cout << "    int scores[3] = {1, 2, 3}" << endl;
+      cout << "for loop:" << endl;
+      cout << "// user intputs for each slot of array" << endl;
+      cout << "for(int i = 0; i < 3; i++){" << endl;
+      cout << "  cin >> scores[i]; }" << endl;
+      cout << "// outputs all slots in array" << endl;
+      cout << "for(int j = 0; j < 10; j++){" << endl;
+      cout << "  cout << scores[j]; }" << endl;
+      cout << "change the output of a slot:" << endl;
+      cout << "  scores[0] = 6" << endl;
+      cout << "  scores[3] = {6, 2, 3};" << endl;
+      break;
+    
+    case 6: // function case
       cout << "Functions:" << endl;
       break;
     
-    case 3: // pass by reference vs value
+    case 7: // pass by reference vs value
       cout << "Pass by Reference:" << endl;
       cout << "-----------------" << endl;
       cout << "//consider it as an address that would permenatly change the" << endl;
@@ -94,55 +154,6 @@ int main(void) {
       cout << "In func, a = 12 b = 7" << endl;
       cout << "In main, x = 5  y = 7" << endl;
       break; 
-
-    case 4: // Loops
-      cout << "Loops:" << endl;
-      cout << "***************************************" << endl;
-      cout << "For Loops:" << endl;
-      cout << "---------" << endl;
-      cout << "for(int i = 0; i < 0; i++)" << endl;
-      cout << "{recurring statements}" << endl;
-      cout << "***************************************" << endl;
-      cout << "While Loops:" << endl;
-      cout << "-----------" << endl;
-      cout << "I = 0;" << endl;
-      cout << "while(I < 10){" << endl;
-      cout << "cout << I" << endl;
-      cout << "I++;" << endl;
-      cout << "}" << endl;
-      cout << "or ---" << endl;
-      cout << "ans = 'Y'" << endl;
-      cout << "while(ans != 'N'){" << endl;
-      cout << "//call some functions" << endl;
-      cout << "cout << \"continue?\";" << endl;
-      cout << "cin << ans;" << endl;
-      cout << "}" << endl;
-      cout << "***************************************" << endl;
-      cout << "Do-While Loops:" << endl;
-      cout << "--------------" << endl;
-      cout << "int counter = 0;" << endl;
-      cout << "do {" << endl;
-      cout << "  cout << \"Counter value: \" << counter << endl;" << endl;
-      cout << "  counter++; // Increment the counter" << endl;
-      cout << "} while (counter < 5); // Continue looping while counter is less than 5" << endl;
-      break;
-
-    case 5: // array
-      cout << "Array:" << endl;
-      cout << "-----" << endl;
-      cout << "declare: <type> <name>[num of slots]" << endl;
-      cout << "    int scores[3] = {1, 2, 3}" << endl;
-      cout << "for loop:" << endl;
-      cout << "// user intputs for each slot of array" << endl;
-      cout << "for(int i = 0; i < 3; i++){" << endl;
-      cout << "  cin >> scores[i]; }" << endl;
-      cout << "// outputs all slots in array" << endl;
-      cout << "for(int j = 0; j < 10; j++){" << endl;
-      cout << "  cout << scores[j]; }" << endl;
-      cout << "change the output of a slot:" << endl;
-      cout << "  scores[0] = 6" << endl;
-      cout << "  scores[3] = {6, 2, 3};" << endl;
-      break;
     
     case 0: // quit case
       cout << "Thanks for Reviewing!" << endl;
