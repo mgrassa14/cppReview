@@ -123,15 +123,18 @@ int main(void) {
     case 4: // array
       cout << "Array:" << endl;
       cout << "--------------" << endl;
-      cout << "declare: <type><name>[num of slots]" << endl;
-      cout << "    int scores[10]" << endl;
+      cout << "declare: <type> <name>[num of slots]" << endl;
+      cout << "    int scores[3] = {1, 2, 3}" << endl;
       cout << "for loop:" << endl;
       cout << "// user intputs for each slot of array" << endl;
-      cout << "for(int i = 0; i < 10; i++){" << endl;
+      cout << "for(int i = 0; i < 3; i++){" << endl;
       cout << "  cin >> scores[i]; }" << endl;
       cout << "// outputs all slots in array" << endl;
       cout << "for(int j = 0; j < 10; j++){" << endl;
       cout << "  cout << scores[j]; }" << endl;
+      cout << "change the output of a slot:" << endl;
+      cout << "  scores[0] = 6" << endl;
+      cout << "  scores[3] = {6, 2, 3};" << endl;
       break;
     
     case 0: // quit case
