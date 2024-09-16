@@ -24,7 +24,7 @@ int main(void) {
     cout << "5. Arrays" << endl;
     cout << "6. Functions" << endl;
     cout << "7. Pass by Reference vs Value" << endl;
-    //--
+    cout << "" << endl;
     //6. Characters
     //7. Strings
     //8. getline & cin
@@ -59,6 +59,20 @@ int main(void) {
     
     case 2: // switch statements case
       cout << "Switch statements:" << endl;
+      cout << "-----------------" << endl;
+      cout << "This whole program uses switch statments!" << endl;
+      cout << "" << endl;
+      cout << "#include <iostream>" << endl;
+      cout << "using namespace std" << endl;
+      cout << "cout << \"x. Case\"" << endl;
+      cout << "" << endl;
+      cout << "switch(expression) {" << endl;
+      cout << "case x:" << endl;
+      cout << "// code block" << endl;
+      cout << "break;" << endl;
+      cout << "default:" << endl;
+      cout << "// code block" << endl;
+      cout << "}" << endl;
       break;
       
     case 3: // debugging tips case
